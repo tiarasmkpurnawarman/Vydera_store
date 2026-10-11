@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Vydera Store</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#36e5e0"/></linearGradient>
+  </defs>
+  <path d="M32 3 58 18v28L32 61 6 46V18Z" fill="#10182c" stroke="url(#g)" stroke-width="3"/>
+  <path d="m37 9-19 27h12l-3 18 20-29H35Z" fill="url(#g)"/>
+</svg>

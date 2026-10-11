@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vydera Store — pilihan top up game favorit dengan alur praktis dan informasi harga yang jelas.">
+    <meta name="theme-color" content="#0b1020">
+    <title>Vydera Store — Game Top Up</title>
+
+    <!-- Bootstrap 5 CSS dari CDN resmi yang dicantumkan dokumentasi Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts: DM Sans & Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BANNER PENGUMUMAN -->
+    <div class="announcement">
+        <span class="pulse-dot"></span> Top up lebih sat-set, main makin gas — <b>tanpa biaya kejutan.</b>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav-glass">
+        <div class="container">
+            <a class="navbar-brand brand" href="#beranda">
+                <span class="brand-icon"><img src="assets/images/logo.svg" alt="" width="26" height="26"></span>
+                <span>Vydera Store<span class="accent">.</span><small>GAME TOP UP</small></span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#topup">Top Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="btn btn-nav" href="#topup"><i class="bi bi-controller me-2"></i>Mulai Top Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO / BERANDA -->
+        <section class="hero" id="beranda">
+            <div class="orb orb-a"></div>
+            <div class="orb orb-b"></div>
+
+            <div class="container position-relative">
+                <div class="row align-items-center g-5">
+
+                    <!-- Teks hero (kiri) -->
+                    <div class="col-lg-6 hero-copy">
+                        <div class="eyebrow"><i class="bi bi-stars"></i> YOUR NEXT LEVEL STARTS HERE</div>
+                        <h1>Push rank.<br><span class="gradient">Bukan nunggu top up.</span></h1>
+                        <p class="hero-lead">Diamond, diamonds, dan game credits dalam satu tempat. Pilih game, tentukan paket, lalu periksa pesananmu dengan mudah.</p>
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <a class="btn btn-glow" href="#topup">Top Up Sekarang <i class="bi bi-arrow-up-right ms-2"></i></a>
+                            <a class="btn btn-outline-soft" href="#cara-topup"><i class="bi bi-play-circle me-2"></i>Lihat cara kerja</a>
+                        </div>
+
+                        <div class="trust-row">
+                            <div class="avatar-stack">
+                                <span>✦</span>
+                                <span>⚡</span>
+                                <span>🎮</span>
+                            </div>
+                            <div>
+                                <b>Partner top up gaming kamu</b>
+                                <small>Pilihan top up untuk gamer</small>
+                            </div>
+                            <div class="trust-sep"></div>
+                            <div>
+                                <b><i class="bi bi-star-fill star"></i> 4.9/5</b>
+                                <small>Pilihan gamer</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kartu ilustrasi hero (kanan) -->
+                    <div class="col-lg-6">
+                        <div class="hero-art">
+                            <div class="art-grid"></div>
+                            <span class="float-chip chip-top"><i class="bi bi-lightning-charge-fill"></i> INSTANT VIBE</span>
+
+                            <div class="diamond-card">
+                                <div class="art-head">
+                                    <span class="live"><i></i> READY TO PLAY</span>
+                                    <span>#001</span>
+                                </div>
+                                <div class="gem-orbit"><i class="bi bi-gem"></i></div>
+                                <div class="art-title">DIAMOND<br><span>DROP</span></div>
+                                <p>Make your next move legendary.</p>
+                                <div class="art-foot">
+                                    <b>MLBB</b>
+                                    <span>VYDERA STORE ↗</span>
+                                </div>
+                            </div>
+
+                            <span class="float-chip chip-bottom"><i class="bi bi-shield-check"></i> SIMPLE. CLEAR. SECURE.</span>
+                            <span class="spark spark-1">✦</span>
+                            <span class="spark spark-2">✧</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistik singkat di bawah hero -->
+                <div class="row g-3 hero-stats">
+                    <div class="col-6 col-md-3">
+                        <div class="stat">
+                            <i class="bi bi-lightning-charge"></i>
+                            <span><b>Sat-set</b><small>Alur ringkas</small></span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat">
+                            <i class="bi bi-receipt-cutoff"></i>
+                            <span><b>Harga jelas</b><small>Tanpa kejutan</small></span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat">
+                            <i class="bi bi-phone"></i>
+                            <span><b>Mobile-ready</b><small>Nyaman di HP</small></span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="stat">
+                            <i class="bi bi-chat-heart"></i>
+                            <span><b>Friendly</b><small>Support ramah</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYANAN -->
+        <section class="section-pad" id="layanan">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="kicker">PILIH ARENA-MU</span>
+                    <h2>Satu tempat untuk <span class="gradient">semua misi.</span></h2>
+                    <p>Mulai dari diamond sampai kebutuhan gaming lainnya. Pilih layanan yang kamu butuhkan.</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Kartu layanan: Mobile Legends -->
+                    <div class="col-md-4">
+                        <article class="service-card featured h-100">
+                            <span class="service-icon purple"><i class="bi bi-gem"></i></span>
+                            <span class="tag">MOBILE LEGENDS</span>
+                            <h3>Mobile Legends: Bang Bang</h3>
+                            <p>Tambah diamond untuk skin, event, Starlight, dan momen push rank bareng squad.</p>
+                            <div class="service-list">
+                                <span><i class="bi bi-check-circle-fill"></i> Pilihan nominal</span>
+                                <span><i class="bi bi-check-circle-fill"></i> User ID + Zone ID</span>
+                            </div>
+                            <a href="#topup" data-pick-game="mlbb">Pilih diamond <i class="bi bi-arrow-up-right"></i></a>
+                        </article>
+                    </div>
+
+                    <!-- Kartu layanan: Free Fire -->
+                    <div class="col-md-4">
+                        <article class="service-card h-100">
+                            <span class="service-icon cyan"><i class="bi bi-fire"></i></span>
+                            <span class="tag">FREE FIRE</span>
+                            <h3>Free Fire</h3>
+                            <p>Siapkan diamond untuk bundle, karakter, dan item favorit di medan pertempuran.</p>
+                            <div class="service-list">
+                                <span><i class="bi bi-check-circle-fill"></i> Paket diamond</span>
+                                <span><i class="bi bi-check-circle-fill"></i> Player ID</span>
+                            </div>
+                            <a href="#topup" data-pick-game="ff">Top up Free Fire <i class="bi bi-arrow-up-right"></i></a>
+                        </article>
+                    </div>
+
+                    <!-- Kartu layanan: Honor of Kings -->
+                    <div class="col-md-4">
+                        <article class="service-card h-100">
+                            <span class="service-icon orange"><i class="bi bi-trophy"></i></span>
+                            <span class="tag">HONOR OF KINGS</span>
+                            <h3>Honor of Kings</h3>
+                            <p>Top up token untuk memperluas pilihan skin dan koleksi hero favoritmu.</p>
+                            <div class="service-list">
+                                <span><i class="bi bi-check-circle-fill"></i> Paket token</span>
+                                <span><i class="bi bi-check-circle-fill"></i> Player ID</span>
+                            </div>
+                            <a href="#topup" data-pick-game="hok">Pilih token <i class="bi bi-arrow-up-right"></i></a>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TOP UP / CHECKOUT -->
+        <section class="topup-section section-pad" id="topup">
+            <div class="container">
+                <div class="section-head">
+                    <span class="kicker">QUICK CHECKOUT</span>
+                    <h2>Top up game <span class="gradient">favoritmu.</span></h2>
+                    <p>Isi data akun, pilih paket, lalu cek ringkasan pesananmu.</p>
+                </div>
+
+                <div class="row g-4 align-items-start">
+
+                    <!-- Panel form checkout (kiri) -->
+                    <div class="col-lg-7">
+                        <div class="checkout-panel">
+
+                            <!-- Langkah 1: pilih game -->
+                            <div class="step-head">
+                                <span>01</span>
+                                <div>
+                                    <h3>Pilih game</h3>
+                                    <p>Pilih game yang ingin kamu isi.</p>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label class="form-label" for="gameSelect">Game</label>
+                                    <select class="form-select custom-input" id="gameSelect">
+                                        <option value="mlbb">Mobile Legends: Bang Bang</option>
+                                        <option value="ff">Free Fire</option>
+                                        <option value="hok">Honor of Kings</option>
+                                        <option value="pubgm">PUBG Mobile</option>
+                                        <option value="valorant">Valorant Points</option>
+                                        <option value="genshin">Genshin Impact</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Langkah 2: data akun game -->
+                            <div class="step-head mt-4">
+                                <span>02</span>
+                                <div>
+                                    <h3>Data akun game</h3>
+                                    <p id="accountHelp">Masukkan User ID dan Zone ID sesuai akunmu.</p>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-7">
+                                    <label class="form-label" for="playerId" id="playerIdLabel">User ID</label>
+                                    <input class="form-control custom-input" id="playerId" placeholder="Contoh: 123456789" required>
+                                </div>
+                                <div class="col-sm-5" id="serverField">
+                                    <label class="form-label" for="serverId" id="serverIdLabel">Zone ID</label>
+                                    <input class="form-control custom-input" id="serverId" placeholder="Contoh: 1234">
+                                </div>
+                                <div class="col-12 helper">
+                                    <i class="bi bi-info-circle"></i> <span id="accountHint">Pastikan ID akun benar sebelum melanjutkan.</span>
+                                </div>
+                            </div>
+
+                            <!-- Langkah 3: pilih paket (kartu paket dibuat lewat app.js) -->
+                            <div class="step-head mt-4">
+                                <span>03</span>
+                                <div>
+                                    <h3 id="packageHeading">Pilih paket diamond</h3>
+                                    <p>Pilih nominal sesuai kebutuhanmu.</p>
+                                </div>
+                            </div>
+                            <div class="row g-3" id="packageGrid" aria-live="polite"></div>
+
+                            <!-- Langkah 4: metode pembayaran -->
+                            <div class="step-head mt-4">
+                                <span>04</span>
+                                <div>
+                                    <h3>Metode pembayaran</h3>
+                                    <p>Pilih metode yang paling praktis buatmu.</p>
+                                </div>
+                            </div>
+                            <div class="payment-list">
+                                <label class="payment-option active">
+                                    <input type="radio" name="payment" value="QRIS" checked>
+                                    <span class="pay-icon"><i class="bi bi-qr-code"></i></span>
+                                    <span><b>QRIS</b><small>Scan dari aplikasi pembayaran</small></span>
+                                    <i class="bi bi-check-circle-fill pay-check"></i>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="E-Wallet">
+                                    <span class="pay-icon wallet"><i class="bi bi-wallet2"></i></span>
+                                    <span><b>E-Wallet</b><small>OVO, DANA, GoPay</small></span>
+                                    <i class="bi bi-check-circle-fill pay-check"></i>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="Transfer Bank">
+                                    <span class="pay-icon bank"><i class="bi bi-bank"></i></span>
+                                    <span><b>Transfer Bank</b><small>Virtual account</small></span>
+                                    <i class="bi bi-check-circle-fill pay-check"></i>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Ringkasan pesanan (kanan) -->
+                    <div class="col-lg-5">
+                        <aside class="summary">
+                            <div class="summary-title">
+                                <div>
+                                    <span class="kicker">ORDER SUMMARY</span>
+                                    <h3>Ringkasan pesanan</h3>
+                                </div>
+                                <i class="bi bi-shield-lock"></i>
+                            </div>
+
+                            <div class="game-line">
+                                <span class="game-icon"><i class="bi bi-controller"></i></span>
+                                <span><b id="summaryGame">Mobile Legends: Bang Bang</b><small id="summaryCurrency">Diamond package</small></span>
+                                <em>DIGITAL</em>
+                            </div>
+
+                            <div class="sum-line"><span>Paket</span><b id="sumPackage">172 Diamonds</b></div>
+                            <div class="sum-line"><span>Harga paket</span><b id="sumPrice">Rp39.000</b></div>
+                            <div class="sum-line"><span>Biaya layanan</span><b class="green-text">Gratis</b></div>
+
+                            <!-- Kode promo -->
+                            <div class="promo-box" id="promo">
+                                <label class="form-label" for="promoCode">Punya kode promo?</label>
+                                <div class="input-group">
+                                    <input class="form-control custom-input" id="promoCode" placeholder="Coba: VYDERA5">
+                                    <button class="btn btn-promo" id="applyPromo" type="button">Pakai</button>
+                                </div>
+                                <small id="promoFeedback" aria-live="polite">Gunakan kode VYDERA5 untuk potongan Rp5.000 pada simulasi checkout.</small>
+                            </div>
+
+                            <div class="total-line">
+                                <span>Total pembayaran</span>
+                                <b id="sumTotal">Rp39.000</b>
+                            </div>
+
+                            <button class="btn btn-glow w-100" id="checkoutButton" type="button">Lanjutkan Pesanan <i class="bi bi-arrow-right ms-2"></i></button>
+
+                            <p class="disclaimer"><i class="bi bi-info-circle me-1"></i> Checkout saat ini merupakan simulasi. Pembayaran dan pengiriman item belum tersedia.</p>
+                            <div class="safe-note"><i class="bi bi-shield-check"></i> Data akun hanya untuk simulasi tampilan checkout.</div>
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CARA TOP UP (3 LANGKAH) -->
+        <section class="section-pad" id="cara-topup">
+            <div class="container">
+                <div class="section-head text-center">
+                    <span class="kicker">NO CONFUSING STEPS</span>
+                    <h2>Top up dalam <span class="gradient">3 langkah.</span></h2>
+                    <p>Alur dibuat singkat supaya kamu fokus ke game, bukan prosesnya.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="step-card">
+                            <span class="step-num">01</span>
+                            <i class="bi bi-person-vcard"></i>
+                            <h3>Masukkan ID</h3>
+                            <p>Isi User ID dan Zone ID dengan teliti agar pesanan tidak salah tujuan.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="step-card">
+                            <span class="step-num">02</span>
+                            <i class="bi bi-gem"></i>
+                            <h3>Pilih paket</h3>
+                            <p>Tentukan nominal dan metode pembayaran yang kamu inginkan.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="step-card">
+                            <span class="step-num">03</span>
+                            <i class="bi bi-check2-circle"></i>
+                            <h3>Konfirmasi</h3>
+                            <p>Periksa ringkasan pesanan sebelum melanjutkan ke tahap berikutnya.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TENTANG -->
+        <section class="section-pad about-section" id="tentang">
+            <div class="container">
+                <div class="about-panel">
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-lg-7">
+                            <span class="kicker">WHY VYDERA STORE?</span>
+                            <h2>Game time itu berharga.<br><span class="gradient">Biar prosesnya nggak ribet.</span></h2>
+                            <p>Vydera Store hadir untuk memudahkan pemain menemukan pilihan top up game favorit dalam satu tempat, dengan alur yang sederhana dan informasi harga yang mudah dipahami.</p>
+                            <div class="about-points">
+                                <span><i class="bi bi-check2"></i> Pilihan game populer</span>
+                                <span><i class="bi bi-check2"></i> Layout responsif</span>
+                                <span><i class="bi bi-check2"></i> Ringkasan pesanan</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="metric">
+                                <span class="metric-icon"><i class="bi bi-controller"></i></span>
+                                <small>BUILT FOR PLAYERS</small>
+                                <strong>Less friction.<br>More action.</strong>
+                                <p>Visual gaming dengan aksen neon yang tetap rapi dan mudah dibaca.</p>
+                                <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section-pad faq-section">
+            <div class="container">
+                <div class="row g-5">
+
+                    <div class="col-lg-5">
+                        <span class="kicker">GOOD TO KNOW</span>
+                        <h2>Pertanyaan yang<br><span class="gradient">sering muncul.</span></h2>
+                        <p>Info singkat supaya pengalaman menjelajah website terasa jelas.</p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="accordion faq" id="faq">
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">Bagaimana proses pembayaran dilakukan?</button>
+                                </h3>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                                    <div class="accordion-body">Belum. Checkout saat ini belum terhubung ke payment gateway atau sistem pengiriman item otomatis. Pastikan layanan sudah aktif sebelum menerima transaksi nyata.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Bagaimana cara mengecek User ID dan Zone ID?</button>
+                                </h3>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                    <div class="accordion-body">Buka profil pemain di game terkait, lalu periksa ID yang ditampilkan. Pastikan datanya benar sebelum konfirmasi.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Apakah harga di sini harga resmi?</button>
+                                </h3>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                    <div class="accordion-body">Harga dan nominal yang ditampilkan merupakan estimasi contoh dan perlu diverifikasi sebelum transaksi nyata.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK -->
+        <section class="section-pad contact-section" id="kontak">
+            <div class="container">
+                <div class="contact-panel">
+                    <div class="row g-5">
+
+                        <div class="col-lg-5">
+                            <span class="kicker">LET'S TALK</span>
+                            <h2>Ada yang mau<br><span class="gradient">kamu tanyakan?</span></h2>
+                            <p>Kirim pesan lewat form ini. Pesan kamu akan ditampilkan sebagai pratinjau sebelum dikirim.</p>
+                            <div class="contact-mini">
+                                <i class="bi bi-envelope-paper"></i>
+                                <span><b>Support Vydera Store</b><small>Layanan pelanggan</small></span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <form id="contactForm" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="contactName">Nama</label>
+                                        <input class="form-control custom-input" id="contactName" placeholder="Nama kamu" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="contactEmail">Email</label>
+                                        <input class="form-control custom-input" type="email" id="contactEmail" placeholder="nama@email.com" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label" for="contactMessage">Pesan</label>
+                                        <textarea class="form-control custom-input" id="contactMessage" rows="4" placeholder="Tulis pesanmu di sini..." required></textarea>
+                                    </div>
+                                    <div class="col-12 d-flex flex-wrap align-items-center gap-3">
+                                        <button class="btn btn-glow" type="button" id="contactConfirmButton">Kirim Pesan <i class="bi bi-send ms-2"></i></button>
+                                        <small class="form-hint"><i class="bi bi-lock me-1"></i> Pratinjau pesan sebelum dikirim.</small>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <a class="brand" href="#beranda">
+                    <span class="brand-icon"><img src="assets/images/logo.svg" alt="" width="26" height="26"></span>
+                    <span>Vydera Store<span class="accent">.</span><small>GAME TOP UP</small></span>
+                </a>
+                <p>Play your way. Level up your day.</p>
+                <a class="back-top" href="#beranda" aria-label="Kembali ke atas"><i class="bi bi-arrow-up"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span id="year"></span> Vydera Store · Top up game, lebih praktis.</span>
+                <span>Main lebih puas, pilih paketmu.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL KONFIRMASI PESANAN (komponen modal Bootstrap) -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dark-modal">
+                <div class="modal-header border-0">
+                    <span class="modal-symbol"><i class="bi bi-bag-check"></i></span>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <span class="kicker">FINAL CHECK</span>
+                    <h2 id="orderTitle">Konfirmasi pesanan</h2>
+                    <p>Apakah Anda yakin ingin melanjutkan pesanan ini?</p>
+                    <div class="modal-details" id="orderDetails"></div>
+                    <small class="modal-hint">Simulasi checkout — belum ada pembayaran sungguhan.</small>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-modal-quiet" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-glow" id="confirmOrder">Ya, Lanjutkan <i class="bi bi-arrow-right ms-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PRATINJAU PESAN KONTAK -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dark-modal">
+                <div class="modal-header border-0">
+                    <span class="modal-symbol"><i class="bi bi-envelope-check"></i></span>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <span class="kicker">MESSAGE PREVIEW</span>
+                    <h2 id="contactTitle">Kirim pesan?</h2>
+                    <p>Apakah Anda yakin ingin mengirim pesan ini?</p>
+                    <div class="modal-details" id="contactDetails"></div>
+                    <small class="modal-hint">Pesan ini hanya ditampilkan sebagai pratinjau.</small>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-modal-quiet" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-glow" id="confirmContact">Ya, Kirim <i class="bi bi-send ms-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFIKASI -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast site-toast" id="siteToast" role="status" aria-live="polite" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-check-circle-fill me-2"></i><span id="toastMessage">Berhasil!</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-3 m-auto" data-bs-dismiss="toast" aria-label="Tutup"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS bundle dari CDN resmi Bootstrap, termasuk Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- SCRIPT JAVASCRIPT Eksternal -->
+    <script src="app.js"></script>
+
+</body>
+</html>
